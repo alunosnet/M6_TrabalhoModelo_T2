@@ -1,0 +1,10 @@
+﻿create table alunos(
+nprocesso int identity primary key,
+nome varchar(100) not null check (len(nome)>=3),
+data_nascimento date not null,
+genero varchar(1) check (genero in ('f','m')),
+morada varchar(200),
+codigo_postal varchar(8),
+localidade varchar(100),
+email varchar(100) check (email like '%@%.%')
+)
