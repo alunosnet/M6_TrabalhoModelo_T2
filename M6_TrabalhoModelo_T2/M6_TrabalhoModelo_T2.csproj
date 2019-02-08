@@ -74,9 +74,26 @@
     <Content Include="App_Data\bd_log.ldf">
       <DependentUpon>bd.mdf</DependentUpon>
     </Content>
+    <Content Include="Consultas\media_aluno.aspx" />
+    <Content Include="Consultas\melhor_aluno.aspx" />
+    <Content Include="Consultas\nr_notas_disciplina.aspx" />
+    <Content Include="css\bootstrap-grid.css" />
+    <Content Include="css\bootstrap-grid.min.css" />
+    <Content Include="css\bootstrap-reboot.css" />
+    <Content Include="css\bootstrap-reboot.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\css.css" />
     <Content Include="Disciplinas\adicionar.aspx" />
     <Content Include="Disciplinas\gerir.aspx" />
     <Content Include="Disciplinas\pesquisar.aspx" />
+    <Content Include="index.aspx" />
+    <Content Include="js\bootstrap.bundle.js" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-3.3.1.slim.min.js" />
+    <Content Include="js\popper.min.js" />
     <Content Include="Logbook.txt" />
     <Content Include="Notas\adicionar.aspx" />
     <Content Include="Notas\gerir.aspx" />
@@ -106,6 +123,27 @@
     <Compile Include="Alunos\pesquisar.aspx.designer.cs">
       <DependentUpon>pesquisar.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Consultas\media_aluno.aspx.cs">
+      <DependentUpon>media_aluno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\media_aluno.aspx.designer.cs">
+      <DependentUpon>media_aluno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\melhor_aluno.aspx.cs">
+      <DependentUpon>melhor_aluno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\melhor_aluno.aspx.designer.cs">
+      <DependentUpon>melhor_aluno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\nr_notas_disciplina.aspx.cs">
+      <DependentUpon>nr_notas_disciplina.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\nr_notas_disciplina.aspx.designer.cs">
+      <DependentUpon>nr_notas_disciplina.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Disciplinas\adicionar.aspx.cs">
       <DependentUpon>adicionar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -126,6 +164,13 @@
     </Compile>
     <Compile Include="Disciplinas\pesquisar.aspx.designer.cs">
       <DependentUpon>pesquisar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Notas\adicionar.aspx.cs">
       <DependentUpon>adicionar.aspx</DependentUpon>
@@ -158,6 +203,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\bootstrap-grid.css.map" />
+    <Content Include="css\bootstrap-grid.min.css.map" />
+    <Content Include="css\bootstrap-reboot.css.map" />
+    <Content Include="css\bootstrap-reboot.min.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="js\bootstrap.bundle.js.map" />
+    <Content Include="js\bootstrap.bundle.min.js.map" />
+    <Content Include="js\bootstrap.js.map" />
+    <Content Include="js\bootstrap.min.js.map" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -166,7 +221,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Imagens\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

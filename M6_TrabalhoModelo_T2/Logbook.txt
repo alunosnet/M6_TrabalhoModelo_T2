@@ -1,4 +1,11 @@
-﻿create table alunos(
+﻿Falta fazer:
+consultas
+upload de imagens
+listar imagem no gerir
+navbar
+bootstrap nos forms e nas grids
+
+create table alunos(
 nprocesso int identity primary key,
 nome varchar(100) not null check (len(nome)>=3),
 data_nascimento date not null,
