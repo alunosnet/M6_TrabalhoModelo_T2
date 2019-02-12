@@ -65,8 +65,8 @@
     <!--Menu-->
     <form id="form1" runat="server">
         <div>
-            Nome: <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-            <asp:Button ID="Button1" runat="server" Text="Pesquisar" />
+            Nome: <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:Button CssClass="btn btn-info" ID="Button1" runat="server" Text="Pesquisar" />
             <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlAlunos" DataKeyNames="nprocesso" GroupItemCount="3">
                 <AlternatingItemTemplate>
                     <td runat="server" style="">nprocesso:
@@ -162,7 +162,7 @@
                     </td>
                 </ItemTemplate>
                 <LayoutTemplate>
-                    <table runat="server">
+                    <table runat="server" class="table">
                         <tr runat="server">
                             <td runat="server">
                                 <table runat="server" id="groupPlaceholderContainer" style="" border="0">

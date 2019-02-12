@@ -64,7 +64,12 @@
     </nav>
     <!--Menu-->
     <form id="form1" runat="server">
-        <div>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Sistemas de Informação</h1>
+                <h2>Módulo 6</h2>
+                <img src="Imagens/logo.png" class="img-fluid" />
+            </div>
         </div>
     </form>
     <!--JS-->

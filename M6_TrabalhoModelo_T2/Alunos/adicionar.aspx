@@ -103,7 +103,7 @@
                     <asp:TextBox CssClass="form-control" Text='<%# Bind("localidade") %>' runat="server" ID="localidadeTextBox" /><br />
                     email:
                     <asp:TextBox CssClass="form-control" Text='<%# Bind("email") %>' runat="server" ID="emailTextBox" /><br />
-                    <asp:FileUpload ID="FileUpload1" runat="server" /><br />
+                    <asp:FileUpload CssClass="form-control-file" ID="FileUpload1" runat="server" /><br />
                     <asp:LinkButton CssClass="btn btn-danger" runat="server" Text="Insert" CommandName="Insert" ID="InsertButton" CausesValidation="True" />&nbsp;<asp:LinkButton CssClass="btn btn-info" runat="server" Text="Cancel" CommandName="Cancel" ID="InsertCancelButton" CausesValidation="False" />
                 </InsertItemTemplate>
                 <ItemTemplate>

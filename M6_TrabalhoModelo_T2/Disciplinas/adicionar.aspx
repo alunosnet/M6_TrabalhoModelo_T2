@@ -65,7 +65,7 @@
     <!--Menu-->
     <form id="form1" runat="server">
         <div>
-            <asp:FormView ID="FormView1" runat="server" DataKeyNames="codigo" DataSourceID="SqlDisciplinas" DefaultMode="Insert">
+            <asp:FormView Width="100%" ID="FormView1" runat="server" DataKeyNames="codigo" DataSourceID="SqlDisciplinas" DefaultMode="Insert">
                 <EditItemTemplate>
                     codigo:
                     <asp:Label Text='<%# Eval("codigo") %>' runat="server" ID="codigoLabel1" /><br />
@@ -81,14 +81,14 @@
                 </EditItemTemplate>
                 <InsertItemTemplate>
                     nome:
-                    <asp:TextBox Text='<%# Bind("nome") %>' runat="server" ID="nomeTextBox" /><br />
+                    <asp:TextBox CssClass="form-control" Text='<%# Bind("nome") %>' runat="server" ID="nomeTextBox" /><br />
                     nrmodulos:
-                    <asp:TextBox Text='<%# Bind("nrmodulos") %>' runat="server" ID="nrmodulosTextBox" /><br />
+                    <asp:TextBox CssClass="form-control" Text='<%# Bind("nrmodulos") %>' runat="server" ID="nrmodulosTextBox" /><br />
                     ano_escolaridade:
-                    <asp:TextBox Text='<%# Bind("ano_escolaridade") %>' runat="server" ID="ano_escolaridadeTextBox" /><br />
+                    <asp:TextBox CssClass="form-control" Text='<%# Bind("ano_escolaridade") %>' runat="server" ID="ano_escolaridadeTextBox" /><br />
                     maximo_faltas:
-                    <asp:TextBox Text='<%# Bind("maximo_faltas") %>' runat="server" ID="maximo_faltasTextBox" /><br />
-                    <asp:LinkButton runat="server" Text="Insert" CommandName="Insert" ID="InsertButton" CausesValidation="True" />&nbsp;<asp:LinkButton runat="server" Text="Cancel" CommandName="Cancel" ID="InsertCancelButton" CausesValidation="False" />
+                    <asp:TextBox CssClass="form-control" Text='<%# Bind("maximo_faltas") %>' runat="server" ID="maximo_faltasTextBox" /><br />
+                    <asp:LinkButton CssClass="btn btn-danger" runat="server" Text="Insert" CommandName="Insert" ID="InsertButton" CausesValidation="True" />&nbsp;<asp:LinkButton CssClass="btn btn-info" runat="server" Text="Cancel" CommandName="Cancel" ID="InsertCancelButton" CausesValidation="False" />
                 </InsertItemTemplate>
                 <ItemTemplate>
                     codigo:

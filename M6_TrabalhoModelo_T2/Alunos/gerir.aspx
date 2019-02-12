@@ -65,9 +65,9 @@
     <!--Menu-->
     <form id="form1" runat="server">
         <div>
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="nprocesso" DataSourceID="SqlAlunos" AllowPaging="True" AllowSorting="True">
+            <asp:GridView CssClass="table table-responsive" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="nprocesso" DataSourceID="SqlAlunos" AllowPaging="True" AllowSorting="True">
                 <Columns>
-                    <asp:CommandField ShowEditButton="True" ShowDeleteButton="True"></asp:CommandField>
+                    <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" ></asp:CommandField>
                     <asp:BoundField DataField="nprocesso" HeaderText="nprocesso" ReadOnly="True" InsertVisible="False" SortExpression="nprocesso"></asp:BoundField>
                     <asp:BoundField DataField="nome" HeaderText="nome" SortExpression="nome"></asp:BoundField>
                     <asp:BoundField DataField="data_nascimento" HeaderText="data_nascimento" SortExpression="data_nascimento" DataFormatString="{0:dd/MM/yyyy}"></asp:BoundField>
@@ -76,6 +76,9 @@
                     <asp:BoundField DataField="codigo_postal" HeaderText="codigo_postal" SortExpression="codigo_postal"></asp:BoundField>
                     <asp:BoundField DataField="localidade" HeaderText="localidade" SortExpression="localidade"></asp:BoundField>
                     <asp:BoundField DataField="email" HeaderText="email" SortExpression="email"></asp:BoundField>
+                    <asp:ImageField DataImageUrlField="nprocesso" DataImageUrlFormatString="~\imagens\{0}.jpg" HeaderText="Fotografia">
+                        <ControlStyle Width="100px"></ControlStyle>
+                    </asp:ImageField>
                 </Columns>
             </asp:GridView>
             <asp:SqlDataSource runat="server" ID="SqlAlunos" ConnectionString='<%$ ConnectionStrings:ConnectionString_Notas_T2 %>' DeleteCommand="DELETE FROM alunos WHERE (nprocesso = @nprocesso)" SelectCommand="select * from alunos" UpdateCommand="UPDATE alunos SET nome = @nome, data_nascimento = @data_nascimento, genero = @genero, codigo_postal = @codigo_postal, morada = @morada, localidade = @localidade, email = @email WHERE (nprocesso = @nprocesso)">
