@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="/css/bootstrap.css" rel="stylesheet" />
     <link href="/css/css.css" rel="stylesheet" />
     <title></title>
@@ -64,7 +65,7 @@
     </nav>
     <!--Menu-->
     <form id="form1" runat="server">
-        <div>
+        <div~class="container-fluid">
             Nome: <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server"></asp:TextBox>
             <asp:Button CssClass="btn btn-info" ID="Button1" runat="server" Text="Pesquisar" />
             <asp:ListView ID="ListView1" runat="server" DataSourceID="SqlAlunos" DataKeyNames="nprocesso" GroupItemCount="3">
@@ -200,7 +201,7 @@
                     <asp:ControlParameter ControlID="TextBox1" PropertyName="Text" Name="nome" Type="String"></asp:ControlParameter>
                 </SelectParameters>
             </asp:SqlDataSource>
-        </div>
+        </div~class="container-fluid">
     </form>
         <!--JS-->
     <script src="/js/jquery-3.3.1.slim.min.js"></script>

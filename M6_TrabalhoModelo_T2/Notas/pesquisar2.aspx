@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="/css/bootstrap.css" rel="stylesheet" />
     <link href="/css/css.css" rel="stylesheet" />
     <title></title>
@@ -64,7 +65,7 @@
     </nav>
     <!--Menu-->
     <form id="form1" runat="server">
-        <div class="container">
+        <div class="container-fluid">
             Nome:<asp:DropDownList CssClass="form-control" ID="DropDownList1" runat="server" DataSourceID="SqlAlunos" DataTextField="nome" DataValueField="nprocesso" AutoPostBack="True"></asp:DropDownList>
             <asp:SqlDataSource runat="server" ID="SqlAlunos" ConnectionString='<%$ ConnectionStrings:ConnectionString_Notas_T2 %>' SelectCommand="SELECT [nome], [nprocesso] FROM [alunos] ORDER BY [nome]"></asp:SqlDataSource>
             <asp:GridView CssClass="table table-striped" ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="id" DataSourceID="SqlNotas">

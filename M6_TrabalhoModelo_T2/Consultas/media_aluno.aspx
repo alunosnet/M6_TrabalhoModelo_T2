@@ -4,6 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="/css/bootstrap.css" rel="stylesheet" />
     <link href="/css/css.css" rel="stylesheet" />
     <title></title>
@@ -65,7 +66,7 @@
     <!--Menu-->
 
     <form id="form1" runat="server">
-        <div class="container">
+        <div class="container-fluid">
             <asp:GridView CssClass="table table-responsive" ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlMedia">
                 <Columns>
                     <asp:BoundField DataField="nome" HeaderText="nome" SortExpression="nome"></asp:BoundField>

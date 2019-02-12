@@ -64,10 +64,11 @@
     </nav>
     <!--Menu-->
     <form id="form1" runat="server">
-        <div class="container">
+        <div class="container-fluid">
             <div class="jumbotron">
                 <h1>Sistemas de Informação</h1>
                 <h2>Módulo 6</h2>
+                <h3>Turno 2</h3>
                 <img src="Imagens/logo.png" class="img-fluid" />
             </div>
         </div>
